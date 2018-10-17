@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "esModuleInterop": false,
+    "target": "es2017",
     "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
     "strictNullChecks": true
   },
   "exclude": [

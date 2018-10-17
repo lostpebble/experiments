@@ -1,4 +1,4 @@
-import Koa, { Context } from "koa";
+import Koa from "koa";
 import { ApolloServer, gql } from "apollo-server-koa";
 
 const app = new Koa();
@@ -18,7 +18,7 @@ const resolvers = {
 const apolloServer = new ApolloServer({ typeDefs, resolvers });
 apolloServer.applyMiddleware({ app });
 
-app.use((ctx: Context) => {
+app.use((ctx) => {
   ctx.body = "yayy";
   ctx.type = "text/plain";
   ctx.status = 200;
